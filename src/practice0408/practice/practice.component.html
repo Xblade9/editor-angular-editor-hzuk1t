@@ -1,0 +1,16 @@
+<label class="text-info">Two way binding example :</label><br />
+<input type="text" [(ngModel)]="inputTxt" />
+<h4 class="text-primary">You have entered : {{ inputTxt }}</h4>
+<hr />
+
+<label class="text-info">event binding :</label><br />
+<input type="text" #txt />
+<button class="btn btn-info ml-1" type="submit" (click)="txtChng(txt.value)">
+  Click
+</button>
+<h4 class="text-primary">You have entered : {{ inputTxt2 }}</h4>
+<hr />
+<button type="button" class="btn btn-warning" (click)="txtchngonBtn()">
+  Submit</button
+><br />
+<label class="text-pr">{{ inputTxt3 }}</label>
